@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>javascript 2 dialog</title>
+
+   
+
+    <script type="text/javascript">
+         window.alert("Selamat datang!");
+        function dialog() {
+            let nama = prompt("Masukkan Nama Anda :");
+            if (nama !== null) {
+              if (confirm("Halo " + nama + " Apakah kamu mau beralih web?")) {
+                if (confirm("Apakah Anda yakin?")) {
+                  window.location.href = "https://youtu.be/gwOYv7uwp1U?feature=shared"
+                  
+                } else {
+                  alert("Anda membatalkan");
+                }
+                
+              } else {
+                alert("Anda membatalkan ");
+                
+              }
+              
+            } else {
+              alert("Anda membatalkan ");             
+            }
+        }
+        function dialog2() {
+          alert("Terimakasih telah berkunjung di website saya! sampai jumpa lagii !!")
+        }
+    </script>
+    </head>
+<body>
+    <h2>SELAMAT DATANG!!</h2>
+    <input
+    type ="button" 
+    onclick="dialog()" 
+    value="Masukkan Nama Anda"
+    id="button"
+    />
+    
+    <br><br>
+    <input
+    type ="button" 
+    onclick="dialog2()" 
+    value="Keluar"
+    id="button"
+    />
+  </script>
+</body>
+
+</html>
+  
